@@ -1,0 +1,96 @@
+package calc_poo;
+
+import java.util.Scanner;
+
+public class calcnova {
+
+	    public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in);
+	        
+	        double num1, num2;
+
+	        System.out.print("--- MENU ---" 
+	        		+ "\n1 - Adição" 
+	        		+ "\n2 - Subtração" 
+	        		+ "\n3 - Multiplicação" 
+	        		+ "\n4 - Divisão"
+	                + "\n5 - Potenciação" 
+	        		+ "\n6 - Porcentagem" 
+	                + "\n7 - Raíz quadrada" 
+	        		+ "\nR: ");
+	        
+	        int menu = sc.nextInt();
+	       
+	        if (menu == 1) {
+	        	Conta x = new Conta();
+	        	System.out.println("digite o primeiro numero:");
+	        	num1 = sc.nextDouble();
+	        	System.out.println("digite o segundo numero:");
+	        	num2 = sc.nextDouble();
+	        	
+	        	double soma = x.soma(num1,num2);
+
+	        	System.out.println("o resultado eh:" +soma);
+	        	
+	        }else if (menu == 2){
+	        	Conta x = new Conta();
+	        	System.out.println("digite o primeiro numero:");
+	        	num1 = sc.nextDouble();
+	        	System.out.println("digite o segundo numero:");
+	        	num2 = sc.nextDouble();
+	        	
+	        	double subtracao = x.subtracao(num1,num2);
+
+	        	System.out.println("o resultado eh:" +subtracao);
+	        }else if (menu == 3){
+	        	Conta x = new Conta();
+	        	System.out.println("digite o primeiro numero:");
+	        	num1 = sc.nextDouble();
+	        	System.out.println("digite o segundo numero:");
+	        	num2 = sc.nextDouble();
+	        	
+	        	double multiplicacao = x.multiplicacao(num1,num2);
+
+	        	System.out.println("o resultado eh:" +multiplicacao);
+	        }else if (menu == 4){
+	        	Conta x = new Conta();
+	        	System.out.println("digite o primeiro numero:");
+	        	num1 = sc.nextDouble();
+	        	System.out.println("digite o segundo numero:");
+	        	num2 = sc.nextDouble();
+	        	
+	        	double divisao = x.divisao(num1,num2);
+
+	        	System.out.println("o resultado eh:" +divisao);
+	        }else if (menu == 5){
+	        	Conta x = new Conta();
+	        	System.out.println("digite o primeiro numero:");
+	        	num1 = sc.nextDouble();
+	        	System.out.println("sobre:");
+	        	num2 = sc.nextDouble();
+	        	
+	        	double potencia = x.potencia(num1,num2);
+
+	        	System.out.println("o resultado eh:" +potencia);
+	        }else if (menu == 7){
+	        	Conta x = new Conta();
+	        	System.out.println("digite um numero:");
+	        	num1 = sc.nextDouble();
+	        	
+	        	double raizQuadrada = x.raizQuadrada(num1);
+
+	        	System.out.println("o resultado eh:" +raizQuadrada);
+	        }else if (menu == 6){
+	        	Conta x = new Conta();
+	        	System.out.println("digite o primeiro numero:");
+	        	num1 = sc.nextDouble();
+	        	System.out.println("% de: ");
+	        	num2 = sc.nextDouble();
+	        	
+	        	double porcentagem = x.porcentagem(num1,num2);
+
+	        	System.out.println("o resultado eh:" +porcentagem);
+	        }
+	       
+	    }
+}
